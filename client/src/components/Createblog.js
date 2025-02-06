@@ -378,7 +378,7 @@ export default function CreateBlog() {
 
     try {
       const response = await axios.post(
-        "http://localhost:8083/upload",
+        `{process.env.BACKEND_URL}/upload`,
         uploadData,
         {
           headers: { "Content-Type": "multipart/form-data" },
