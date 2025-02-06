@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
+    // baseURL: "https://blogapplication-y125.onrender.com/api/v1/auth"
     baseURL: "https://blogapplication-y125.onrender.com/api/v1/auth"
 });
 console.log("API", API);

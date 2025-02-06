@@ -45,7 +45,8 @@ export default function CreateBlog() {
 
     try {
       const response = await axios.post(
-        `{process.env.BACKEND_URL}/upload`,
+         "https://blogapplication-y125.onrender.com/upload",
+        //  `${import.meta.env.BACKEND_URL}/upload`,
         uploadData,
         {
           headers: { "Content-Type": "multipart/form-data" },
