@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: `{process.env.BACKEND_URL}/api/v1/auth`,
+    baseURL: "http://localhost:8083/api/v1/auth",
 });
 console.log("API", API);
 
