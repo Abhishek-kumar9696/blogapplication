@@ -50,7 +50,12 @@ const PORT = process.env.PORT || 8083;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:3000", "https://blogapplications.onrender.com"],
+    credentials: true,
+  })
+);
 app.use(cookieParser());
 
 // Configure Cloudinary
